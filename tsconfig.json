@@ -1,16 +1,20 @@
 {
   "include": ["src/**/*", "shared", "types"],
+  "files": ["index.d.ts"],
+  "extensions": [".ts", ".js"],
   "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "ESNext",
     "rootDir": "",
     "allowJs": true, // tells ts to read js fiels
     "declaration": false, // generate d.ts files
     "emitDeclarationOnly": false,
-    "removeComments": true
+    "removeComments": true,
     "typeRoots": ["index.d.ts"],
+    "outFile": "./build/index.js",
+    "boundle": true,
     "skipLibCheck": true, // skip type checking of declaration files
-    "forceConsistentCasingInFileNames": false // Disallow inconsistenly-cased references to the same file
+    "forceConsistentCasingInFileNames": false, // Disallow inconsistenly-cased references to the same file
     "allowImportingTsExtensions": true
-  },
-  "files": ["index.d.ts"],
-  "extensions": [".ts", ".js"]
+  }
 }
