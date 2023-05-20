@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*", "shared", "types"],
+  "compilerOptions": {
+    "rootDir": "",
+    "allowJs": true, // tells ts to read js fiels
+    "declaration": false, // generate d.ts files
+    "emitDeclarationOnly": false,
+    "removeComments": true
+    "typeRoots": ["index.d.ts"],
+    "skipLibCheck": true, // skip type checking of declaration files
+    "forceConsistentCasingInFileNames": false // Disallow inconsistenly-cased references to the same file
+    "allowImportingTsExtensions": true
+  },
+  "files": ["index.d.ts"],
+  "extensions": [".ts", ".js"]
+}
