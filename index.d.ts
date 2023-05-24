@@ -24,5 +24,10 @@ interface CloudScriptHandlers {
   [key: string]: (args: CSArguments, context: CSContext<any>) => boolean | void;
 }
 
+interface IServer {
+  GetUserReadOnlyData: (PlayerMasterId: string, Keys: Array<string>) => Object;
+}
+
 declare const handlers: CloudScriptHandlers;
 declare const log: ILog;
+declare const server: IServer;

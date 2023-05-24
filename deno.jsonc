@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch main.ts",
+    "bundle": "esbuild --bundle src/index.ts --platform=node --outfile=dist/index.js"
   }
 }
